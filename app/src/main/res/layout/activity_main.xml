@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="#2868D8"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <ImageView
+            android:id="@+id/imagView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hydroponic"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIDROPONIK"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imagView">
+        </TextView>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/background_bg"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:rowCount="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_kontrol"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/control" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Kontrol"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_monitoring"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/plants" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Monitoring"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_rowWeight="1"-->
+        <!--            android:layout_columnWeight="1"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:cardCornerRadius="4dp"-->
+        <!--            app:cardElevation="4dp">-->
+
+        <!--            <RelativeLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="80dp"-->
+        <!--                    android:layout_height="80dp"-->
+        <!--                    android:layout_centerInParent="true"-->
+        <!--                    android:src="@drawable/jam" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_alignParentBottom="true"-->
+        <!--                    android:layout_centerHorizontal="true"-->
+        <!--                    android:layout_marginStart="20dp"-->
+        <!--                    android:layout_marginBottom="20dp"-->
+        <!--                    android:text="Alarm"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="18sp" />-->
+        <!--            </RelativeLayout>-->
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_rowWeight="1"-->
+        <!--            android:layout_columnWeight="1"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            app:cardCornerRadius="4dp"-->
+        <!--            app:cardElevation="4dp">-->
+
+        <!--            <RelativeLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:padding="10dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="80dp"-->
+        <!--                    android:layout_height="80dp"-->
+        <!--                    android:layout_centerInParent="true"-->
+        <!--                    android:src="@drawable/control" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_alignParentBottom="true"-->
+        <!--                    android:layout_centerHorizontal="true"-->
+        <!--                    android:layout_marginStart="20dp"-->
+        <!--                    android:layout_marginBottom="20dp"-->
+        <!--                    android:text="Kontrol"-->
+        <!--                    android:textColor="#000"-->
+        <!--                    android:textSize="18sp" />-->
+        <!--            </RelativeLayout>-->
+        <!--        </androidx.cardview.widget.CardView>-->
+    </GridLayout>
+
+
+</LinearLayout>
